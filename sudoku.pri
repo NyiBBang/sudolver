@@ -1,0 +1,12 @@
+QT =
+CONFIG += debug
+CONFIG -= qt
+
+INCLUDEPATH += $$PWD/src
+OBJECTS_DIR = $$PWD/obj
+MOC_DIR = $$OBJECTS_DIR
+DESTDIR = $$PWD/bin
+LIBS += -L$$DESTDIR
+
+QMAKE_CXXFLAGS += -std=c++0x
+
