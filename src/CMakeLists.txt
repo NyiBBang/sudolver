@@ -1,0 +1,10 @@
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+add_subdirectory(logic)
+add_subdirectory(console)
+
+if (Qt5Core_FOUND AND Qt5Gui_FOUND AND Qt5Widgets_FOUND)
+  message(STATUS "Qt was found, sudolver-gui will be built.")
+  add_subdirectory(gui)
+else()
+  message(STATUS "Qt was not found, sudolver-gui will NOT be built.")
+endif()
