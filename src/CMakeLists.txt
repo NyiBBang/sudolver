@@ -1,5 +1,6 @@
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 add_subdirectory(logic)
+add_subdirectory(lib)
 add_subdirectory(console)
 
 if (Qt5Core_FOUND AND Qt5Gui_FOUND AND Qt5Widgets_FOUND)
